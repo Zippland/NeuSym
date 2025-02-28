@@ -2,6 +2,8 @@
 
 NeuSym是一个创新性的神经符号融合框架，通过将小型语言模型的自然语言处理能力与符号推理系统的精确逻辑能力结合，显著提升AI系统在复杂推理任务中的表现。
 
+[查看完整项目计划](plan.md)
+
 ## 项目特点
 
 - 专为小型语言模型（1-3B参数级别）设计的神经符号架构
@@ -176,9 +178,9 @@ pytest -xvs neusym/tests/test_babi_loader.py
 ```
 @misc{neusym2024,
   title={NeuSym: 神经符号推理增强的小型语言模型},
-  author={Your Name},
+  author={Zippland},
   year={2024},
   publisher={GitHub},
-  howpublished={\url{https://github.com/yourusername/neusym}}
+  howpublished={\url{https://github.com/zippland/neusym}}
 }
 ``` 
