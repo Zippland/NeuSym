@@ -23,10 +23,10 @@ print("本示例演示了如何使用NeuSym神经符号推理系统进行简单�
 print("## 1. 初始化系统组件")
 print("首先，我们初始化NeuSym的核心组件...\n")
 
-from neusym.models.language_model import LanguageModel
-from neusym.core.symbolic_engine import SymbolicEngine
-from neusym.core.neural_symbolic_interface import NeuralSymbolicInterface
-from neusym.core.hybrid_reasoning_controller import HybridReasoningController
+from src.models.language_model import LanguageModel
+from src.core.symbolic_engine import SymbolicEngine
+from src.core.neural_symbolic_interface import NeuralSymbolicInterface
+from src.core.hybrid_reasoning_controller import HybridReasoningController
 
 # 初始化语言模型
 print("正在初始化语言模型（这可能需要一些时间）...")

@@ -17,7 +17,7 @@ sys.path.append(str(ROOT_DIR))
 
 if __name__ == "__main__":
     # 导入演示模块
-    from neusym.notebooks.babi_demo import main
+    from src.notebooks.babi_demo import main
     
     # 运行演示（传递命令行参数）
     main() 

@@ -19,12 +19,12 @@ sys.path.append(str(ROOT_DIR))
 import numpy as np
 from tqdm import tqdm
 
-from neusym.data.babi_loader import BabiDataLoader
-from neusym.core.symbolic_engine import SymbolicEngine
-from neusym.core.neural_symbolic_interface import NeuralSymbolicInterface
-from neusym.core.hybrid_reasoning_controller import HybridReasoningController
-from neusym.core.babi_symbolic_adapter import BabiSymbolicAdapter
-from neusym.models.language_model import MockLanguageModel
+from src.data.babi_loader import BabiDataLoader
+from src.core.symbolic_engine import SymbolicEngine
+from src.core.neural_symbolic_interface import NeuralSymbolicInterface
+from src.core.hybrid_reasoning_controller import HybridReasoningController
+from src.core.babi_symbolic_adapter import BabiSymbolicAdapter
+from src.models.language_model import MockLanguageModel
 
 # 设置日志
 logging.basicConfig(
@@ -54,7 +54,7 @@ def setup_system(model_name="mock", device="cpu", use_adapter=False, task_id=Non
         lm = MockLanguageModel()
     else:
         try:
-            from neusym.models.language_model import LanguageModel
+            from src.models.language_model import LanguageModel
             lm = LanguageModel(model_name_or_path=model_name, device=device)
             logger.info(f"语言模型加载成功: {model_name}")
         except Exception as e:

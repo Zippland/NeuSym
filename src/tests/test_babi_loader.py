@@ -15,7 +15,7 @@ from pathlib import Path
 ROOT_DIR = Path(__file__).resolve().parent.parent.parent
 sys.path.append(str(ROOT_DIR))
 
-from neusym.data.babi_loader import BabiDataLoader
+from src.data.babi_loader import BabiDataLoader
 
 class TestBabiLoader(unittest.TestCase):
     """测试bAbI数据加载器"""

@@ -13,10 +13,10 @@ import logging
 import argparse
 from pathlib import Path
 
-from neusym.models.language_model import LanguageModel
-from neusym.core.symbolic_engine import SymbolicEngine
-from neusym.core.neural_symbolic_interface import NeuralSymbolicInterface
-from neusym.core.hybrid_reasoning_controller import HybridReasoningController
+from src.models.language_model import LanguageModel
+from src.core.symbolic_engine import SymbolicEngine
+from src.core.neural_symbolic_interface import NeuralSymbolicInterface
+from src.core.hybrid_reasoning_controller import HybridReasoningController
 
 # 设置日志
 logging.basicConfig(

@@ -8,7 +8,7 @@
 import unittest
 import logging
 
-from neusym.core.symbolic_engine import Predicate, Fact, Rule, SymbolicEngine
+from src.core.symbolic_engine import Predicate, Fact, Rule, SymbolicEngine
 
 # 禁用日志输出
 logging.disable(logging.CRITICAL)

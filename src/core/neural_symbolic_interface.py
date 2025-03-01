@@ -368,7 +368,7 @@ if __name__ == "__main__":
     logging.basicConfig(level=logging.INFO)
     
     # 导入模拟语言模型
-    from neusym.models.language_model import MockLanguageModel
+    from src.models.language_model import MockLanguageModel
     
     # 初始化接口
     lm = MockLanguageModel()
