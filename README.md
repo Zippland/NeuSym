@@ -64,7 +64,7 @@ cd neusym
 ### 2. 安装依赖
 
 ```bash
-pip install -r neusym/requirements.txt
+pip install -r src/requirements.txt
 ```
 
 ### 3. 安装开发模式
@@ -135,15 +135,15 @@ from neusym.core.symbolic_engine import SymbolicEngine
 engine = SymbolicEngine()
 
 # 添加事实
-engine.add_fact("位于(约翰, 厨房)")
-engine.add_fact("拿着(约翰, 苹果)")
+engine.add_fact("At(Jhon, kitchen)")
+engine.add_fact("Has(Jhon, apple)")
 
 # 添加规则
-engine.add_rule("位于(X, Y) & 拿着(X, Z) -> 位于(Z, Y)")
+engine.add_rule("At(X, Y) & has(X, Z) -> At(Z, Y)")
 
 # 执行推理
-results = engine.reason("位于(苹果, 哪里)")
-print(results)  # 输出: ["位于(苹果, 厨房)"]
+results = engine.reason("At(apple, where)")
+print(results)  # 输出: ["At(apple, kitchen)"]
 ```
 
 ## 测试
